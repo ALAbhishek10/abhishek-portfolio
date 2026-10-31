@@ -33,7 +33,7 @@ app.post("/api/contact", async (req, res) => {
             });
         }
 
-        const Contact = require("./models/Contact");
+        const Contact = require("./models/contact");
 
         await Contact.create({ name, email, message });
 
