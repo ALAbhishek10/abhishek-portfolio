@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Your Profile | Abhishek A L</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="entry-page">
+
+    <!-- NAVIGATION -->
+    <header class="entry-header">
+        <nav class="entry-nav">
+            <a href="/" class="entry-logo">Abhishek<span>.</span></a>
+
+            <div>
+                <a href="/">Home</a>
+                <a href="/home.html" class="active">Profile</a>
+                <a href="/about.html">About</a>
+                <a href="/feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="entry-intro">
+
+        <p class="entry-label">PERSONAL PROFILE</p>
+
+        <h1>Let's build your story.</h1>
+
+        <p>
+            Tell us about yourself, your academic journey,
+            your skills and the things that inspire you.
+        </p>
+
+    </section>
+
+
+    <!-- PROFILE FORM -->
+    <main class="entry-container">
+
+        <form id="profileForm" novalidate>
+
+            <!-- 01 PERSONAL DETAILS -->
+            <section class="entry-section">
+
+                <p class="entry-number">01 / GETTING TO KNOW YOU</p>
+                <h2>Personal Details</h2>
+
+                <div class="entry-field">
+                    <label for="fullName">Full Name *</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="email">Email Address *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="linkedin">LinkedIn Profile (Optional)</label>
+                    <input
+                        type="text"
+                        id="linkedin"
+                        name="linkedin"
+                        placeholder="Paste your LinkedIn profile URL"
+                    >
+                </div>
+
+            </section>
+
+
+            <!-- 02 EDUCATION -->
+            <section class="entry-section">
+
+                <p class="entry-number">02 / YOUR ACADEMIC JOURNEY</p>
+                <h2>Education</h2>
+
+                <div class="entry-field">
+                    <label for="course">Course *</label>
+                    <input
+                        type="text"
+                        id="course"
+                        name="course"
+                        placeholder="Example: B.Sc. Computer Science and Statistics"
+                        required
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="institution">College Name *</label>
+                    <input
+                        type="text"
+                        id="institution"
+                        name="institution"
+                        placeholder="Enter your college name"
+                        required
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="university">University *</label>
+                    <input
+                        type="text"
+                        id="university"
+                        name="university"
+                        placeholder="Enter your university"
+                        required
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="studyYear">Current Study Year *</label>
+
+                    <select id="studyYear" name="studyYear" required>
+                        <option value="">Select study year</option>
+                        <option value="First Year">First Year</option>
+                        <option value="Second Year">Second Year</option>
+                        <option value="Third Year">Third Year</option>
+                        <option value="Fourth Year">Fourth Year</option>
+                        <option value="Graduated">Graduated</option>
+                    </select>
+                </div>
+
+                <div class="entry-field">
+                    <label for="graduationYear">
+                        Expected Graduation Year (Optional)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="graduationYear"
+                        name="graduationYear"
+                        min="2020"
+                        max="2040"
+                        placeholder="Example: 2029"
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="educationDetails">
+                        Additional Academic Details (Optional)
+                    </label>
+
+                    <textarea
+                        id="educationDetails"
+                        name="educationDetails"
+                        rows="4"
+                        placeholder="Mention achievements, academic activities or other details."
+                    ></textarea>
+                </div>
+
+            </section>
+
+
+            <!-- 03 PERSONAL INTRODUCTION -->
+            <section class="entry-section">
+
+                <p class="entry-number">03 / YOUR STORY</p>
+                <h2>Introduce Yourself</h2>
+
+                <div class="entry-field">
+                    <label for="headline">Professional Headline *</label>
+
+                    <input
+                        type="text"
+                        id="headline"
+                        name="headline"
+                        placeholder="Example: Aspiring Developer and Creative Thinker"
+                        required
+                    >
+                </div>
+
+                <div class="entry-field">
+                    <label for="summary">Personal Summary *</label>
+
+                    <textarea
+                        id="summary"
+                        name="summary"
+                        rows="5"
+                        placeholder="Write about yourself, your goals and ambitions."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="entry-field">
+                    <label for="languages">Languages Known *</label>
+
+                    <textarea
+                        id="languages"
+                        name="languages"
+                        rows="3"
+                        placeholder="Example: English, Malayalam, Hindi"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="entry-field">
+                    <label for="interests">Interests *</label>
+
+                    <textarea
+                        id="interests"
+                        name="interests"
+                        rows="3"
+                        placeholder="Mention your interests and hobbies."
+                        required
+                    ></textarea>
+                </div>
+
+            </section>
+
+
+            <!-- 04 SKILLS AND PROJECTS -->
+            <section class="entry-section">
+
+                <p class="entry-number">04 / SKILLS AND EXPERIENCE</p>
+                <h2>Skills & Projects</h2>
+
+                <div class="entry-field">
+                    <label for="skills">Skills *</label>
+
+                    <textarea
+                        id="skills"
+                        name="skills"
+                        rows="4"
+                        placeholder="Example: HTML, CSS, JavaScript, Programming, Problem Solving"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="entry-field">
+                    <label for="projects">Projects *</label>
+
+                    <textarea
+                        id="projects"
+                        name="projects"
+                        rows="5"
+                        placeholder="Describe your projects and what you learned."
+                        required
+                    ></textarea>
+                </div>
+
+            </section>
+
+
+            <!-- 05 ACHIEVEMENTS -->
+            <section class="entry-section">
+
+                <p class="entry-number">05 / ADDITIONAL HIGHLIGHTS</p>
+                <h2>Achievements & Certifications</h2>
+
+                <div class="entry-field">
+                    <label for="certification">
+                        Certifications or Achievements (Optional)
+                    </label>
+
+                    <textarea
+                        id="certification"
+                        name="certification"
+                        rows="4"
+                        placeholder="Mention certificates, awards or achievements."
+                    ></textarea>
+                </div>
+
+            </section>
+
+
+            <!-- SUBMISSION -->
+            <div class="entry-submit">
+
+                <p>
+                    Complete your profile details and save your information.
+                </p>
+
+                <button
+                    type="submit"
+                    id="submitButton"
+                    class="entry-submit-button"
+                >
+                    Save My Profile →
+                </button>
+
+                <p id="profileStatus" role="status" aria-live="polite"></p>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!-- SUCCESS POPUP -->
+    <div id="successModal" class="entry-modal" hidden>
+
+        <div
+            class="entry-modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="successTitle"
+        >
+
+            <div class="entry-success-icon">✓</div>
+
+            <h2 id="successTitle">Profile Saved Successfully!</h2>
+
+            <p>
+                Your details have been saved successfully.
+                Your portfolio is ready to explore.
+            </p>
+
+            <a href="/about.html" class="entry-view-button">
+                View My Portfolio →
+            </a>
+
+            <button type="button" id="closeModal">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="ab-footer">
+        <p>Designed with creativity by Abhishek.</p>
+        <p>© 2026 Abhishek A L. All rights reserved.</p>
+    </footer>
+
+
+    <script src="profile.js"></script>
+
+</body>
+</html>

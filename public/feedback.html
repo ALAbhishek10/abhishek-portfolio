@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback | Abhishek A L</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ab-feedback-page">
+
+    <!-- NAVIGATION -->
+    <header class="ab-header">
+        <nav class="ab-nav">
+            <a href="/" class="ab-logo">Abhishek<span>.</span></a>
+
+            <div class="ab-nav-links">
+                <a href="/">Home</a>
+                <a href="/home.html">Profile</a>
+                <a href="/about.html">About Me</a>
+                <a href="/feedback.html" class="active">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="fb-hero">
+
+        <p class="fb-eyebrow">YOUR THOUGHTS MATTER</p>
+
+        <h1>Let's hear from you.</h1>
+
+        <p>
+            Your feedback helps make this portfolio better.
+            Share your thoughts, suggestions or just say hello.
+        </p>
+
+    </section>
+
+
+    <main class="fb-container">
+
+        <!-- FEEDBACK FORM -->
+        <section class="fb-form-section">
+
+            <p class="fb-eyebrow">LEAVE A MESSAGE</p>
+
+            <h2>Share Your Feedback.</h2>
+
+            <p class="fb-description">
+                Thank you for taking the time to visit my portfolio.
+            </p>
+
+            <form id="feedbackForm">
+
+                <div class="fb-field">
+                    <label for="feedbackName">Your Name *</label>
+
+                    <input
+                        type="text"
+                        id="feedbackName"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="fb-field">
+                    <label for="feedbackMessage">Your Message *</label>
+
+                    <textarea
+                        id="feedbackMessage"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your feedback here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    id="feedbackSubmitButton"
+                    class="fb-submit-button"
+                >
+                    Submit Feedback →
+                </button>
+
+                <p
+                    id="feedbackStatus"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- FEEDBACK DISPLAY -->
+        <section class="fb-display-section">
+
+            <p class="fb-eyebrow">KIND WORDS & THOUGHTS</p>
+
+            <h2>Feedback Given.</h2>
+
+            <p class="fb-description">
+                See what visitors have shared about this portfolio.
+            </p>
+
+            <button
+                type="button"
+                id="toggleFeedbackButton"
+                class="fb-toggle-button"
+                aria-expanded="false"
+                aria-controls="feedbackListSection"
+            >
+                View Feedback ↓
+            </button>
+
+
+            <!-- HIDDEN BY DEFAULT -->
+            <div id="feedbackListSection" hidden>
+
+                <div class="fb-list-heading">
+                    <h3>Messages Received</h3>
+                    <span id="feedbackCount">0 messages</span>
+                </div>
+
+                <div id="feedbackList">
+                    <p>Loading feedback...</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="ab-footer">
+        <p>Designed with creativity by Abhishek.</p>
+        <p>© 2026 Abhishek A L. All rights reserved.</p>
+    </footer>
+
+
+    <script src="feedback.js"></script>
+
+</body>
+</html>
